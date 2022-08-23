@@ -12,18 +12,23 @@ function retornaCorBotao(button, cor) {
 function painelQuemSomos() {
     const element = document.getElementsByClassName("textoConteudo")[0];
     const element2 = document.getElementsByClassName("containerConteudoMenuDireito")[0];
-    element.innerHTML = `<b>Instalados no município de Dionísio Cerqueira, oferecemos serviços de hospedagem há 20 anos.
-    </b> <br> <br> <p> <b>Visão:</b> Ser a melhor opção de hospedagem da região da tŕiplice fronteira para clientes que buscam repouso confortável com simplicidade e excelente relação entre custo e benefício. 
-    </p> <br> <p> <b>Missão:</b> Oferecer serviços de hospedagem com atendimento rápido, simples e sem burocracia prezando pelo bom atendimento, higiene e conforto com preços acessíveis. 
-    </p> <br> <p> <b>Valores:</b> Honestidade; Simplicidade; Tradição; Prestatividade e Liberdade.</p>
+    element.innerHTML = `<b>Instalados no município de Dionísio Cerqueira, oferecemos serviços de hospedagem há 20 anos.</b>
+    <div><br></div>
+    <b>Visão:</b> Ser a melhor opção de hospedagem da região da tŕiplice fronteira para clientes que buscam repouso confortável com simplicidade e excelente relação entre custo e benefício.
+    <div><br></div>
+    <b>Missão:</b> Oferecer serviços de hospedagem com atendimento rápido, simples e sem burocracia prezando pelo bom atendimento, higiene e conforto com preços acessíveis. <br> <br>
+    <div><br></div>
+    <b>Valores:</b> Honestidade; Simplicidade; Tradição; Prestatividade e Liberdade.
+
     <style>
         .textoConteudo {
-            margin: 20px;
+            display: flex;
+            text-align: justify;
+            margin-left: 30px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(58, 80, 145);
-            font-size: 17px;
+            font-size: 16px;
             flex-direction: column;
-            display: flex;
             height: 90%;
             width: 90%;
         };
@@ -53,11 +58,14 @@ function painelQuemSomos() {
 function painelServicos() {
     const element = document.getElementsByClassName("textoConteudo")[0];
     const element2 = document.getElementsByClassName("containerConteudoMenuDireito")[0];
-    element.innerHTML = `<b>Oferecemos serviço de hospedagem com quartos individuais e coletivos; 
-                        <br> <br> Possuímos uma cozinha bem equipada para quem deseja preparar 
-                        pequenos pratos, porém não oferecemos alimentação; 
-                        <br> <br> Possuímos quartos com banheiro e quartos com banheiros compartilhados; 
-                        <br> <br> Realizamos a limpeza do quarto e troca de toalhas uma vez ao dia.</b>
+    element.innerHTML = `Oferecemos serviço de hospedagem com quartos individuais e coletivos; 
+                        <div><br></div>
+                        Possuímos uma cozinha bem equipada para quem deseja preparar 
+                        pequenos pratos, porém não oferecemos alimentação;
+                        <div><br></div> 
+                        Possuímos quartos com banheiro e quartos com banheiros compartilhados; 
+                        <div><br></div>
+                        Realizamos a limpeza do quarto e troca de toalhas uma vez ao dia.
                         <style>
                             .textoConteudo {
                                 margin: 20px;
@@ -97,28 +105,27 @@ function painelQuartos() {
     /*const element2 = document.getElementsByClassName("containerConteudoMenuDireito")[0];*/
     element.innerHTML = 
         `<div class="quartosSuperior">
-            <div class="quartos">1 Casal + <br> 1 Solteiro
-
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto3.jpeg" alt="">CASAL + SOLTEIRO
             </div>
-            <div class="quartos">1 Casal + <br> 2 Solteiros
-    
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto2.jpeg" alt="">1 CASAL / 2 SOLTEIROS
             </div>
-            <div class="quartos">1 Casal
-    
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto4.jpeg" alt="">CASAL
             </div>
         </div>
         <div class="quartosInferior">
-            <div class="quartos">2 Solteiros
-
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto5.jpeg" alt="">2 SOLTEIROS
             </div>
-            <div class="quartos">1 Solteiro
-    
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto6.jpeg" alt="">1 SOLTEIRO        
             </div>
-            <div class="quartos">1 Solteiro <br> WC Coletivo
-    
+            <div class="quartos">
+                <img class="quartosFotos" src="./quarto7.jpeg" alt="">WC COMPARTILHADO
             </div>
         </div>
-
     <style>
         .textoConteudo {
             font-family: Arial, Helvetica, sans-serif;
@@ -126,8 +133,10 @@ function painelQuartos() {
             font-size: 17px;
             flex-direction: column;
             display: flex;
-            height: 90%;
-            width: 90%;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(82, 196, 177);
+            border-radius: 40px 5px 10px 0px;
         };
 
         .containerConteudoMenuEsquerdo {
@@ -142,26 +151,34 @@ function painelQuartos() {
             display: flex;
             margin: 1px;
             font-family: 'Paytone One', sans-serif;
+            font-size: 14px;
+            flex-direction: column;
             justify-content: center;
-            height: 100%;
+            height: 95%;
             width: 33%;
-            font-align: center;
-            border-style: groove;
-            border-radius: 25px 0px 25px 0px;
+            border-style: solid;
+            border-radius: 40px 0px 25px 0px;
+            border-color: white;
+            text-indent: 5px;
+            
         }
         .quartosSuperior {
             display: flex;
-            margin-botton: 5%;
-            height: 50%;
-            width: 50%;
-            background-color: red;
+            height: 100%;
+            width: 100%;
+            
         }
         .quartosInferior {
             display: flex;
-            margin-top: 5%;
-            height: 50%;
-            width: 50%;
-            background-color: blue;
+            height: 100%;
+            width: 100%;
+            
+        }
+        .quartosFotos {
+            display: flex;
+            border-radius: 40px 0px 25px 0px;
+            height: 100%;
+            width: 100%;
         }
     </style>` 
 }
@@ -169,11 +186,14 @@ function painelQuartos() {
 function painelLocalizacao() {
     const element = document.getElementsByClassName("textoConteudo")[0];
     const element2 = document.getElementsByClassName("containerConteudoMenuDireito")[0];
-    element.innerHTML = `Localizados no Município de Dionísio Cerqueira - SC. 
-                        <br> <br> Rua 7 de Setembro, 809 - Centro - CEP 89.950-000 
-                        <br> <br> <b>Contato: (049) 3644-1748 </b><br> <br> 
+    element.innerHTML = `Localizados no Município de Dionísio Cerqueira - SC.
+                        <div><br></div>
+                        Rua 7 de Setembro, 809 - Centro - CEP 89.950-000
+                        <div><br></div>
+                        <b>Contato: (049) 3644-1748</b>
+                        <div><br></div>
                         O mapa ao lado é interativo e você pode utilizá-lo para navegar 
-                        e encontrar nossa localização com facilidade. 
+                        e encontrar nossa localização com facilidade.
                         <style>
                             .textoConteudo {
                                 margin: 20px;
@@ -209,10 +229,16 @@ function painelLocalizacao() {
 function painelReserva() {
     const element = document.getElementsByClassName("textoConteudo")[0];
     const element2 = document.getElementsByClassName("containerConteudoMenuDireito")[0];
-    element.innerHTML = `Nossas reservas são feitas por de contato telefônico pelo número: 
-                        <br> <br> <b> (049) 3644-1748. </b> <br> <br> Você pode entrar em contato 
-                        pelo whatsapp no número: <br> <br> <b< (049) 99159-6632. </b> <br> <br> <b> 
-                        Ou click no botão ao lado para iniciar o whatsapp automaticamente. </b>
+    element.innerHTML = `Nossas reservas são feitas por de contato telefônico pelo número:
+                        <div><br></div> 
+                        <b>(049) 3644-1748.</b>
+                        <div><br></div>
+                        Você pode entrar em contato 
+                        pelo whatsapp no número: 
+                        <div><br></div>
+                        <b>(049) 99159-6632.</b>
+                        <div><br></div>
+                        Ou click no botão ao lado para iniciar o whatsapp automaticamente.
                         <style>
                             .textoConteudo {
                                 margin: 20px;
@@ -225,6 +251,7 @@ function painelReserva() {
                                 width: 90%;
                             };
                         </style>`;
+
     element2.innerHTML = `<style> 
                         .containerConteudoMenuDireito { 
                             display: flex; 

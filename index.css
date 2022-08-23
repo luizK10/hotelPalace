@@ -226,15 +226,7 @@ margin: 0;
     margin: 1px;
 }
 
-.textoConteudo {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(58, 80, 145);
-    font-size: 17px;
-    flex-direction: column;
 
-    height: 90%;
-    width: 90%;
-}
 
 .Copyright {
     margin-top: 5px;
