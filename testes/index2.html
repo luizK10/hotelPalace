@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index2.css">
+    <link rel="stylesheet" href="./index2.html">
 </head>
 <body>
-    <div class="div1">asdf
-        <div class="div2">asdf
-            <div class="div3">asdf
-                <div class="div4">asdf
-                    <div class="div5">asdf
-                        <div class="div6">asdf</div>
-                    </div>
-                </div>
+    <div class="containerConteudoMenuEsquerdo">
+        <div class="quartosEsquerdo">
+            <div class="quartos"> <b>1 Casal + 1 Solteiro</b> 
+
+            </div>
+            <div class="quartos"> <b>1 Casal + 2 Solteiros</b> 
+    
+            </div>
+            <div class="quartos"> <b>1 Casal</b> 
+    
+            </div>
+        </div>
+        <div class="quartosDireito">
+            <div class="quartos"> <b>2 Solteiros</b>
+
+            </div>
+            <div class="quartos"><b>1 Solteiro</b>
+    
+            </div>
+            <div class="quartos"> <b>1 Solteiro WC Coletivo</b> 
+    
             </div>
         </div>
     </div>
-<style>
-    .div1 {
-        border: 2px;
-        border-color: black;
-    }
-</style>
+    <style>
+        .containerConteudoMenuEsquerdo {
+    display: flex;
+    height: 410px;
+    width: 600px;
+    border-radius: 40px 5px 10px 0px;
+    background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));
+    flex-direction: row;
+    text-align: justify;
+    background-color: white;
+        }
+        .quartos {
+            font-family: 'Paytone One', sans-serif;
+            justify-content: center;
+            height: 33%;
+            display: flex;
+            border-style: solid;
+            border-color: white;
+        }
+        .quartosDireito {
+            height: 400px;
+            width: 50%;
+        }
+        .quartosEsquerdo {
+            height: 400px;
+            width: 50%;
+        }
+    </style>
 </body>
 </html>
+
+
 
 <!-- botão whatsapp
 <a href='https://api.whatsapp.com/send?phone=5549991596632&text=Ol%C3%A1.%20Gostaria%20de%20fazer%20uma%20reserva.'> <input class='contato' type='button' value='Whatsapp'> <style> .contato { border-style: solid;border-color: white;border-radius: 50% 50% 2% 50%;font-size: 40px;height: 200px;width: 200px;color: white;background-color: rgb(45, 230, 28);}</style>
