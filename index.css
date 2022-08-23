@@ -6,12 +6,22 @@ margin: 0;
     display: flex ;
     /*border: 2px black solid;*/
     justify-content: flex-end;
-    height: 32vh;
-    background-color: rgb(82, 196, 177);
+    height: 27vh;
+    background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));
+    border-radius: 15%;
+}
+
+.containerSlogan {
+    border-radius: 20%;
+    display: flex;
+    background: linear-gradient(90deg, white, rgb(255, 132, 132));
+    flex-direction: row;
+    justify-content: end;
 }
 
 .containerEsquerdo {
-    width: 50%;
+    display: flex;
+    margin-bottom: 0px;
 }
 
 .containerDireito {
@@ -26,6 +36,7 @@ margin: 0;
 
 .containerDireitoInferior {
     display: flex;
+    margin-bottom: 0px;
 }
 
 .quadrado {
@@ -90,10 +101,144 @@ margin: 0;
     line-height: 70px;
 }
 
-.slogan {
-    text-align: right;
+.sloganO {
+    width: 30px;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 50px;
     color: white;
     font-style: oblique;
+    font-size: 20px;
+}
+
+.sloganConforto {
+    width: 85px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.sloganDa {
+    width: 35px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.sloganSimplicidade {
+    width: 66px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 45px;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.sloganPonto {
+    width: 50px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+}
+.imgContainerEsquerdo{
+    margin-top: 10px;
+    /*margin: 5px;*/
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-right: 0px;
+    width: 290px;
+    height: 140px;
+    /*margin: 10px;*/
+    justify-content: center;
+    border-radius: 15%;
+}
+
+.imgContainerDireito{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    width: 290px;
+    height: 140px;
+    /*margin: 10px;*/
+    justify-content: center;
+    border-radius: 15%;
+}
+
+.containerConteudo {
+    margin-top: 10px;
+    display: flex;
+    height: 300px;
+    background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));
+    height: 350px;
+    border-radius: 20px;
+}
+
+.containerMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    margin-left: 14px;
+    height: 340px;
+    width: 300px;
+}
+
+.containerConteudoMenu {
+    display: flex;
+    justify-content: center;
+    border-radius: 40px 5px 10px 0px;
+    margin-top: 14px;
+    height: 308px;
+    width: 1030px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+.containerConteudoMenuEsquerdo {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border-radius: 40px 5px 10px 0px;
+    background: linear-gradient(to right, rgb(196, 206, 204), rgb(82, 196, 177));
+    text-align: justify;
+    background-color: white;
+}
+
+.buttonMenu {
+    text-align: left;
+    height: 61px;
+    width: 340px;
+    background-color: #9e6b7c;
+    color:white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 1px;
+}
+
+.textoConteudo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 80, 145);
+    font-size: 17px;
+    flex-direction: column;
+    margin: 20px;
+    height: 90%;
+    width: 90%;
+}
+
+.Copyright {
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: right;
 }
