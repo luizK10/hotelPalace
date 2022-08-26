@@ -43,6 +43,7 @@ margin: 0;
 
 .containerDireitoInferior {
     display: flex;
+    cursor: pointer;
     margin-bottom: 0px;
 }
 

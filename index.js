@@ -9,6 +9,10 @@ function retornaCorBotao(button, cor) {
     retornaCor.style.backgroundColor = (cor);
 }
 
+function home () {
+    window.open("./index.html")
+}
+
 function painelQuemSomos() {
     const element = document.getElementsByClassName("containerConteudoMenu")[0];
         element.innerHTML = 
@@ -73,6 +77,7 @@ function painelQuartos() {
 
         </div>`;
 }
+
 
 function clickQuarto(quarto) {
     window.open(`./index${quarto}.html`,"nome","toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,top=300,left=400,width=640,height=380");    
