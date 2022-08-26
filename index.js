@@ -17,7 +17,7 @@ function painelQuemSomos() {
         <div><br></div>
         <b>Visão:</b> Ser a melhor opção de hospedagem da região da tŕiplice fronteira para clientes que buscam repouso confortável com simplicidade e excelente relação entre custo e benefício.
         <div><br></div>
-        <b>Missão:</b> Oferecer serviços de hospedagem com atendimento rápido, simples e sem burocracia prezando pelo bom atendimento, higiene e conforto com preços acessíveis. <br> <br>
+        <b>Missão:</b> Oferecer serviços de hospedagem com atendimento rápido, simples e sem burocracia prezando pelo bom atendimento, higiene e conforto com preços acessíveis. <br>
         <div><br></div>
         <b>Valores:</b> Honestidade; Simplicidade; Tradição; Prestatividade e Liberdade.
     </div>
@@ -52,31 +52,30 @@ function painelQuartos() {
         `<div class="containerQuartos">
             <div class="containerQuartosVertical">
                 <div class="tituloQuartos"> <b> CASAL </b> </div>
-                <div class="quarto1" onclick="clickQuarto()"> </div>
-                <div class="tituloQuartos"> <b> CASAL + SOLTEIROS </b> </div>
-                <div class="quarto2"></div>
+                <div class="quarto1" onclick="clickQuarto('QuartoCasal')"> </div>
+                <div class="tituloQuartos"> <b> CASAL + SOLTEIRO </b> </div>
+                <div class="quarto2" onclick="clickQuarto('QuartoCasalSolteiro')"> </div>
             </div>
 
             <div class="containerQuartosVertical">
                 <div class="tituloQuartos"> <b> CASAL + 2 SOLTEIROS </b> </div>
-                <div class="quarto3"></div>
+                <div class="quarto3" onclick="clickQuarto('QuartoCasal2Solteiros')"></div>
                 <div class="tituloQuartos"> <b> 2 SOLTEIROS </b> </div>
-                <div class="quarto4"></div>
+                <div class="quarto4" onclick="clickQuarto('Quarto2Solteiros')"> </div>
             </div>
 
             <div class="containerQuartosVertical">
-                <div class="tituloQuartos"> <b> SOLTEIRO </b> </div>
-                <div class="quarto5"></div>
+                <div class="tituloQuartos"> <b> 2 CASAL + SOLTEIRO </b> </div>
+                <div class="quarto5" onclick="clickQuarto('Quarto2CasalSolteiro')"> </div>
                 <div class="tituloQuartos"> <b> SOLTEIRO / WC COMPARTILHADO </b> </div>
-                <div class="quarto6"></div>
+                <div class="quarto6" onclick="clickQuarto('QuartoSolteiro')"></div>
             </div>
 
         </div>`;
 }
 
-function clickQuarto() {
-    window.open(`./indexQuartos.html`,"nome","toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,top=300,left=400,width=auto,height=auto");
-    
+function clickQuarto(quarto) {
+    window.open(`./index${quarto}.html`,"nome","toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,top=300,left=400,width=640,height=380");    
 }
 
 function painelLocalizacao() {
