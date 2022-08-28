@@ -11,11 +11,7 @@ margin: 0;
     border-radius: 15%;
 }
 
-@media (max-width: 720px) {
-    .containerTitle {
-        background: yellow;
-    }
-}
+
 
 .containerSlogan {
     border-radius: 20%;
@@ -108,6 +104,16 @@ margin: 0;
     padding-right: 50px;
     line-height: 70px;
 }
+@media (max-width: 670px) {
+    .title {
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    padding-right: 50px;
+
+    }
+}
 
 .sloganO {
     width: 30px;
@@ -167,6 +173,13 @@ margin: 0;
     border-radius: 15%;
 }
 
+@media (max-width: 1300px) {
+    .imgContainerEsquerdo {
+        display: none;
+    }
+
+
+}
 .imgContainerDireito{
     margin-top: 10px;
     margin-left: 0px;
@@ -179,6 +192,12 @@ margin: 0;
     /*margin: 10px;*/
     justify-content: center;
     border-radius: 15%;
+}
+
+@media (max-width: 980px) {
+    .imgContainerDireito {
+        display: none;
+    }
 }
 
 .containerConteudo {
@@ -211,6 +230,24 @@ margin: 0;
     border-color: white;
 }
 
+.containerHomeEsquerdo {
+    display: flex;
+    margin: 2px;
+    border-radius: 40px 5px 10px 0px;
+    height: 100%;
+    width: 170px;
+    background-image: url(./luminosoDia.jpg);
+    background-size: 100%;
+}
+.containerHomeDireitoMaior {
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+    margin: 2px;
+    height: 100%;
+    width: 100%;
+    background-image: url(./faixada3.jpg);
+    background-size: 100%;
+}
 
 .buttonMenu {
     text-align: left;
@@ -294,7 +331,6 @@ margin: 0;
     height: 100%;
     text-align: justify;
     flex-direction: column;
-    align-content: flex-start;
     margin: 10px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
