@@ -113,6 +113,19 @@ margin: 0;
     padding-right: 50px;
 
     }
+
+@media (max-width: 670px) {
+    .containerDireitoInferiorDireito {
+        display: none;
+    }
+}
+@media (max-width: 670px) {
+    .containerDireitoInferiorEsquerdo {
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+    }
+}
 }
 
 .sloganO {
